@@ -49,9 +49,12 @@
 							"extraWebpackConfig": "projects/mf-1st-app/webpack.prod.config.js"
 						},
 						"development": {
+							"buildOptimizer": false,
 							"optimization": false,
+							"vendorChunk": true,
 							"extractLicenses": false,
-							"sourceMap": true
+							"sourceMap": true,
+							"namedChunks": true
 						}
 					},
 					"defaultConfiguration": "production"
